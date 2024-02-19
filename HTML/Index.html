@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador/Desencriptador</title>
+        <link rel="stylesheet" href="/CSS/reset.css">
+        <link rel="stylesheet" href="/CSS/style.css">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> -->
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    </head>
+
+    <body>
+        <header>
+
+        </header>
+
+        <main>
+            <section class="logo">
+                <img src="/Image/Logo.png" alt="">
+            </section>
+
+            <section class="izq">
+
+                <section class="entrada">
+                    <textarea id="inputText" placeholder="Ingrese el texto aquí" spellcheck="true"></textarea> 
+                </section>
+               
+                <section class="botones">
+                    <button id="encryptBtn" onclick="encriptar()">Encriptar</button>
+                    <button id="decryptBtn" onclick="desencriptar()">Desencriptar</button>
+                </section> 
+
+            </section>
+
+            <section class="der">
+
+                <section class="card">
+
+                    <div class="card-imagen">
+                        <img src="/Image/Muñeco.png" id="muneco" alt="">
+                    </div>
+                    
+                    <div class="card-msg">
+                        <p style="font-weight: bold; font-size: 24px;">Ningún mensaje fue encontrado</p>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+  
+                    <div class="card-textbox">
+                        <textarea id="outputText" placeholder="Resultado" readonly></textarea>
+                    </div>
+
+                    <div class="card-button">
+                        <button id="copyBtn" onclick="copiar()">Copiar resultado</button>
+                    </div>
+
+                </section>
+
+            </section>
+            
+        </main>
+        <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, eligendi blanditiis modi culpa molestias quidem ab autem placeat, quia nobis excepturi suscipit temporibus quaerat cum adipisci a? Hic, inventore minima!</p> -->
+
+        <script src="/JavaScript/EncDes.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+    </body>
+</html>
+
+
+
+

@@ -1,0 +1,198 @@
+/* Estilos CSS */
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #F3F5FC;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+}
+
+.logo{
+  margin: 20px 0px 0px 0px;
+  padding: 0px;
+  flex: 0.5;
+  justify-content: center;
+  align-items: center;
+}
+
+.izq {
+  flex: 5.5;
+  margin: 80px 0px 0px 0px;
+}
+
+.der {
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+}
+
+.entrada { 
+  margin: 10px; 
+  padding: 10px; 
+  height: 70%;
+}
+
+h1, .card-msg, .card-image {
+  text-align: center;
+}
+
+textarea {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #F3F5FC;
+  resize: none;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#inputText::placeholder {
+  color: #0A3871;
+}
+
+.botones { 
+  text-align: center;
+  margin: 10px; 
+  padding: 10px; 
+}
+
+button {
+  display: inline-block;
+  margin: 0; 
+  padding: 15px 50px;
+  min-width: 250px;
+  text-align: center;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 18px;
+  margin: 5px; 
+  font-size: 20px;
+}
+
+button:hover{
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+#encryptBtn {
+  background-color: #0A3871;
+  color: #9B9797;
+}
+
+#decryptBtn {
+ background-color: #9B9797;
+ color: #0A3871;
+ border-style: solid;
+ border-width: 1px;
+ border-color: #0A3871;
+}
+
+.card {
+ /* position: relative; */
+ margin: 20px;
+ background-color: white;
+ width: calc(100%-20px);
+ height: 95vh;
+ border-radius: 32px;
+ box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+ border: 1px solid #0A3871;
+ box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#muneco {
+ width: calc(100%-30px);
+ height: calc(100%-30px);
+ margin: 200px 20px 20px 20px;
+}
+
+p {
+  padding: 10px;
+}
+
+.card-textbox {
+  width: calc(100%-20px);
+  height: 75vh;
+  border-radius: 32px;
+ }
+
+.card-button, .card-textbox, .card-imagen, .card-msg, .card {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+#outputText {
+  background-color: white;
+  border-radius: 32px;
+  margin: 50px 0px 0px 0px;
+}
+
+#copyBtn {
+  background-color: #fff;
+  color:black;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+
+.card-button {
+  margin-top: 70px;
+}
+
+  
+@media screen and (max-width: 1200px) {
+  
+  main {
+      display:block;
+  }
+
+  .logo, .izq, .der, .entrada {
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo, .entrada {
+    margin: 20px 0px 0px 0px;
+  }
+
+  .card-imagen {
+    display: none;
+  }
+
+  .card-textbox {
+    width: calc(100%-20px);
+    height: 20vh;
+    border-radius: 32px;
+    margin: 10px 0px 0px 0px;
+    padding-top: 10px;
+  }
+
+  .card-msg {
+    padding-top: 40px;
+  }
+
+  .card {
+    margin-top: 10px;
+    background-color: white;
+    width: calc(100%-20px);
+    height: 40vh;
+    border-radius: 32px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  }
+
+}
